@@ -1,0 +1,21 @@
+*{
+    display: inline;
+}
+
+title{
+    background: blueviolet;
+    display: block;
+
+}
+
+div{
+    outline: 0.5px solid red;
+    border: ridge 4px blue;
+    margin-bottom: 15px;
+}
+
+
+p{
+    margin: 10px 0px;
+}
+

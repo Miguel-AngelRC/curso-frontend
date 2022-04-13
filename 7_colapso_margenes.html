@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapso de margenes</title>
+</head>
+
+<style>
+    body {
+    margin: 0;
+    }
+
+    #flexbox{
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+        background-color: red;
+    }
+    .hijo{
+        margin: 10px;
+        background: rebeccapurple;
+    }
+
+    span{
+        margin: 0px 10px;
+    }
+
+    #div1{
+        background-color: cadetblue;
+        height: 100px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+
+    #div2{
+        background-color: yellowgreen;
+        height: 30px;
+        margin-top: -50px;
+        border: 1px solid black;
+    }
+
+    .padre{
+        background-color: red;
+        height: 100px;
+        margin-top: 50px;
+        
+    }
+
+    .hij{
+        background-color: blue;
+        margin-top: 100px;
+        height: 30px;
+        width: 50px;
+    }
+
+</style>
+
+<body>  
+    <div class="padre">
+        <div class="hij"></div>
+        <div class="hij"></div>
+    </div>
+
+    <div class="hijo">Hijo 1</div>
+        <div class="hijo">Hijo 2</div>
+
+    <div id="flexbox">
+        <div class="hijo">Hijo 1</div>
+        <div class="hijo">Hijo 2</div>
+    </div>
+
+    <div id="flexbox">
+        <div class="hijo">Hijo 1</div>
+        <div class="hijo">Hijo 2</div>
+    </div>
+    
+    <p>
+        <span>Hola</span> <span>holaa</span>
+    </p>
+
+    <div id="div1">Margen -20px</div>
+    <div id="div2">Margen -50px</div>
+
+
+</body>
+</html>
