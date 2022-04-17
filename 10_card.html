@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My card</title>
+
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: -apple-system, sans-serif;
+        }
+
+        #card{
+            display: flex;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 80vh;
+            width: 90vw;
+            min-width: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+
+        .sides{
+            position: relative;
+            width: 50%;
+        }
+
+        .sides.one > img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: 0px -150px;
+        }
+
+        .sides.one .minicard{
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            height: 75%;
+            width: 60%;
+            background: white;
+            opacity: 90%;
+        }
+
+        .sides.one .minicard #imgperfil{
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: 0px 0px;
+            filter: drop-shadow(0 0 5px rgb(53, 53, 53));
+        }
+
+        .sides.one .minicard p{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            color: #180A0A;
+        }
+
+        .sides.one .minicard #name{  
+            top: 125px;  
+            font-size: 1.5em; 
+            font-weight: bold;
+        }
+
+        .sides.one .minicard #description{
+            top: 50%;
+        }
+
+    .sides.one .minicard #socialmedia{
+        position: absolute;
+        bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .sides.one .minicard #socialmedia::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        width: 90%;
+        border: 0.5px solid #E78EA9;
+    }
+
+    .sides.one .minicard .logomedia{
+        width: 25px;        
+    }
+
+    .sides.two {
+        width: 60%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+    }
+
+    .sides.two #descriptions{
+        padding: 10px;
+    }
+
+    .sides.two #descriptions h1{
+        border-radius: 3px;
+        padding: 7px;
+        width: 150px;
+        background: #FF6464;
+        color: white;
+        font-size: 1.1em;
+    }
+
+    .sides.two #descriptions p{
+        margin: auto;
+        border-radius: 3px;
+        padding: 7px;
+        width: 80%;
+        color: #180A0A;
+        font-size: 0.95em;
+        text-align: justify;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <section id="card">
+        <div class="sides one">
+            <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" alt="Background">
+            <div class="minicard">
+                <img id="imgperfil" src="https://drive.google.com/uc?id=1yF41LuT6HdhUGzmM1WwP3cVYTf9JozvB" alt="">    
+                <p id="name">Miguel Ángel</p>
+                <p id="description"> Desarrollador Frontend, próximamente Desarrollador Backend.</p>
+                <div id="socialmedia">
+                    <img src="https://drive.google.com/uc?id=1yRQpZoVgu2lLaN6R6lGGnYTQ2-OYP9D6" alt="Logo Facebook" class="logomedia">
+                    <img src="https://drive.google.com/uc?id=1yR0DaTHb0VUzbnnQhfu2zl_V4fn-C2ZU" alt="Logo Instagram" class="logomedia">
+                    <img src="https://drive.google.com/uc?id=1yQmxUL4C9mMZGaLvBjjEms_4v8_NfG4X" alt="Logo Twitter" class="logomedia">
+                    <img src="https://drive.google.com/uc?id=1yOyJwtdTtWM6kk-Chcx3vNKGD0Szdsj1" alt="Logo LinkedIn" class="logomedia">
+                    <img src="https://drive.google.com/uc?id=1yRP8w8hPAc4PdabX6h7ehTPHrSzyVX9m" alt="Logo GitHub" class="logomedia">
+                </div>
+            </div>
+        </div>
+        
+        <div class="sides two">
+            <div id="descriptions">
+                <h1>Sobre mi</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero impedit saepe quos, soluta nulla ipsum iure est dolore earum! Inventore porro quam fugiat sequi! Quasi est adipisci exercitationem perspiciatis.</p>
+            </div>
+
+            <div id="descriptions">
+                <h1>Lenguajes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero impedit saepe quos, soluta nulla ipsum iure est dolore earum! Inventore porro quam fugiat sequi! Quasi est adipisci exercitationem perspiciatis.</p>
+            </div>
+
+            <div id="descriptions">
+                <h1>Herramientas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero impedit saepe quos, soluta nulla ipsum iure est dolore earum! Inventore porro quam fugiat sequi! Quasi est adipisci exercitationem perspiciatis.</p>
+            </div>
+
+            <div id="descriptions">
+                <h1>Idiomas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero impedit saepe quos, soluta nulla ipsum iure est dolore earum! Inventore porro quam fugiat sequi! Quasi est adipisci exercitationem perspiciatis.</p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
